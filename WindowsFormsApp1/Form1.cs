@@ -34,9 +34,13 @@ namespace WindowsFormsApp1
 
         private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
         {
-         if(MessageBox.Show("Confirma exclusão", "Excluindo", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+         if(MessageBox.Show("Confirma exclusão", "Excluindo", MessageBoxButtons.YesNo,
+             MessageBoxIcon.Question,
+             MessageBoxDefaultButton.Button2) ==
+             DialogResult.Yes)
             {
                 musicaBindingSource.RemoveCurrent();
+                this.tableAdapterManager.UpdateAll(this.musicaDataSet);
             }   
         }
     }

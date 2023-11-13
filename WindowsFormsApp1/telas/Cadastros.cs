@@ -49,24 +49,26 @@ namespace WindowsFormsApp1.telas
 
             if(vProcurar=="Que começa com")
             {
-                vFiltro += "LIKE '" + vTexto + "%'";
+                vFiltro += " like'" + vTexto + "%'";
             }
             else if (vProcurar == "Que contém")
             {
-                vFiltro += "LIKE '%" + vTexto + "%'";
+                vFiltro += " like'%" + vTexto + "%'";
             }
             else if (vProcurar == "Que termina com")
             {
-                vFiltro += "LIKE '%" + vTexto + "'";
-            }
+                vFiltro += " like'%" + vTexto + "'";
+            } 
             else if (vProcurar == "Igual a")
             {
-                vFiltro += "LIKE '" + vTexto + "'";
+                vFiltro += " like'" + vTexto + "'";
             }
             else
             {
                 vFiltro = "";
             }
+
+
 
             musicaBindingSource.Filter = vFiltro;
         }

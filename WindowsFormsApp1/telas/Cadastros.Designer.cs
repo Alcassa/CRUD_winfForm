@@ -83,12 +83,14 @@ namespace WindowsFormsApp1.telas
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.musicaDataGridView.DataSource = this.musicaBindingSource;
-            this.musicaDataGridView.Location = new System.Drawing.Point(78, 281);
+            this.musicaDataGridView.Location = new System.Drawing.Point(52, 183);
+            this.musicaDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.musicaDataGridView.Name = "musicaDataGridView";
             this.musicaDataGridView.RowHeadersWidth = 62;
             this.musicaDataGridView.RowTemplate.Height = 28;
-            this.musicaDataGridView.Size = new System.Drawing.Size(815, 220);
+            this.musicaDataGridView.Size = new System.Drawing.Size(543, 143);
             this.musicaDataGridView.TabIndex = 1;
+            this.musicaDataGridView.VisibleChanged += new System.EventHandler(this.btnFIltrar_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -134,9 +136,10 @@ namespace WindowsFormsApp1.telas
             // btnFIltrar
             // 
             this.btnFIltrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFIltrar.Location = new System.Drawing.Point(794, 26);
+            this.btnFIltrar.Location = new System.Drawing.Point(529, 17);
+            this.btnFIltrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnFIltrar.Name = "btnFIltrar";
-            this.btnFIltrar.Size = new System.Drawing.Size(128, 57);
+            this.btnFIltrar.Size = new System.Drawing.Size(85, 37);
             this.btnFIltrar.TabIndex = 2;
             this.btnFIltrar.Text = "Filtrar";
             this.btnFIltrar.UseVisualStyleBackColor = true;
@@ -151,9 +154,10 @@ namespace WindowsFormsApp1.telas
             "Artista",
             "Categoria",
             "DataLancamento"});
-            this.cmbColuna.Location = new System.Drawing.Point(59, 41);
+            this.cmbColuna.Location = new System.Drawing.Point(39, 27);
+            this.cmbColuna.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbColuna.Name = "cmbColuna";
-            this.cmbColuna.Size = new System.Drawing.Size(192, 28);
+            this.cmbColuna.Size = new System.Drawing.Size(129, 21);
             this.cmbColuna.TabIndex = 3;
             // 
             // cmbProcurar
@@ -165,24 +169,27 @@ namespace WindowsFormsApp1.telas
             "Que começa com",
             "Que contém",
             "Que termina com"});
-            this.cmbProcurar.Location = new System.Drawing.Point(301, 41);
+            this.cmbProcurar.Location = new System.Drawing.Point(201, 27);
+            this.cmbProcurar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbProcurar.Name = "cmbProcurar";
-            this.cmbProcurar.Size = new System.Drawing.Size(190, 28);
+            this.cmbProcurar.Size = new System.Drawing.Size(128, 21);
             this.cmbProcurar.TabIndex = 4;
             // 
             // txtPor
             // 
-            this.txtPor.Location = new System.Drawing.Point(561, 41);
+            this.txtPor.Location = new System.Drawing.Point(374, 27);
+            this.txtPor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPor.Name = "txtPor";
-            this.txtPor.Size = new System.Drawing.Size(186, 26);
+            this.txtPor.Size = new System.Drawing.Size(125, 20);
             this.txtPor.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(88, 9);
+            this.label1.Location = new System.Drawing.Point(59, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 20);
+            this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "Coluna";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -190,26 +197,28 @@ namespace WindowsFormsApp1.telas
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(345, 9);
+            this.label2.Location = new System.Drawing.Point(230, 6);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 20);
+            this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Procurar";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(557, 9);
+            this.label3.Location = new System.Drawing.Point(371, 6);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 20);
+            this.label3.Size = new System.Drawing.Size(23, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Por";
             // 
             // Cadastros
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(976, 540);
+            this.ClientSize = new System.Drawing.Size(651, 351);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -218,7 +227,9 @@ namespace WindowsFormsApp1.telas
             this.Controls.Add(this.cmbColuna);
             this.Controls.Add(this.btnFIltrar);
             this.Controls.Add(this.musicaDataGridView);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Cadastros";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastros";
             this.Load += new System.EventHandler(this.Cadastros_Load);
             ((System.ComponentModel.ISupportInitialize)(this.musicaDataSet)).EndInit();
