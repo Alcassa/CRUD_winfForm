@@ -12,6 +12,8 @@ namespace WindowsFormsApp1.telas
 {
     public partial class MenuPrincipal : Form
     {
+        public Boolean limiteDeLimitedeTelas = false;
+        public Boolean limiteDeLimitedeTelas2 = false;
         public MenuPrincipal()
         {
             InitializeComponent();
@@ -24,15 +26,31 @@ namespace WindowsFormsApp1.telas
 
         private void AdicionarCadastroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var adicionar = new Form1();
-            adicionar.Show();
+            if (!limiteDeLimitedeTelas)
+            {
+                limiteDeLimitedeTelas = true;
+                var adicionar = new Form1();
+                adicionar.Show();
+            }
+            else
+            {
+                MessageBox.Show("Já existe uma janela em aberto");
+            }
 
         }
 
         private void PesquisarCadastrosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var pesquisar = new Cadastros();
-            pesquisar.Show();
+            if (!limiteDeLimitedeTelas2)
+            {
+                limiteDeLimitedeTelas2 = true;
+                var pesquisar = new Cadastros();
+                pesquisar.Show();
+            }
+            else
+            {
+                MessageBox.Show("Já existe uma janela em aberto");
+            }
         }
     }
 }

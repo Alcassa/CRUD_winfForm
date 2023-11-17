@@ -68,8 +68,6 @@ namespace WindowsFormsApp1.telas
                 vFiltro = "";
             }
 
-
-
             musicaBindingSource.Filter = vFiltro;
         }
     }
