@@ -65,6 +65,12 @@
     <Compile Include="telas\Cadastros.Designer.cs">
       <DependentUpon>Cadastros.cs</DependentUpon>
     </Compile>
+    <Compile Include="telas\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="telas\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     </Compile>
     <EmbeddedResource Include="telas\Cadastros.resx">
       <DependentUpon>Cadastros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telas\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="telas\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
