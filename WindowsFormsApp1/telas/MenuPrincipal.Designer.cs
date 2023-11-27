@@ -32,8 +32,7 @@
             this.opçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adicionarCadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pesquisarCadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.relatórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +52,8 @@
             // 
             this.opçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.adicionarCadastroToolStripMenuItem,
-            this.pesquisarCadastrosToolStripMenuItem});
+            this.pesquisarCadastrosToolStripMenuItem,
+            this.relatórioToolStripMenuItem});
             this.opçõesToolStripMenuItem.Name = "opçõesToolStripMenuItem";
             this.opçõesToolStripMenuItem.Size = new System.Drawing.Size(59, 22);
             this.opçõesToolStripMenuItem.Text = "Opções";
@@ -61,44 +61,28 @@
             // adicionarCadastroToolStripMenuItem
             // 
             this.adicionarCadastroToolStripMenuItem.Name = "adicionarCadastroToolStripMenuItem";
-            this.adicionarCadastroToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.adicionarCadastroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.adicionarCadastroToolStripMenuItem.Text = "Adicionar cadastro";
             this.adicionarCadastroToolStripMenuItem.Click += new System.EventHandler(this.AdicionarCadastroToolStripMenuItem_Click);
             // 
             // pesquisarCadastrosToolStripMenuItem
             // 
             this.pesquisarCadastrosToolStripMenuItem.Name = "pesquisarCadastrosToolStripMenuItem";
-            this.pesquisarCadastrosToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.pesquisarCadastrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pesquisarCadastrosToolStripMenuItem.Text = "Pesquisar cadastros";
             this.pesquisarCadastrosToolStripMenuItem.Click += new System.EventHandler(this.PesquisarCadastrosToolStripMenuItem_Click);
             // 
-            // button1
+            // relatórioToolStripMenuItem
             // 
-            this.button1.Location = new System.Drawing.Point(195, 196);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Adicionar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.AdicionarCadastroToolStripMenuItem_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(631, 196);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Pesquisar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.PesquisarCadastrosToolStripMenuItem_Click);
+            this.relatórioToolStripMenuItem.Name = "relatórioToolStripMenuItem";
+            this.relatórioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.relatórioToolStripMenuItem.Text = "Relatório";
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(822, 399);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MenuPrincipal";
@@ -118,7 +102,6 @@
         private System.Windows.Forms.ToolStripMenuItem opçõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem adicionarCadastroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pesquisarCadastrosToolStripMenuItem;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ToolStripMenuItem relatórioToolStripMenuItem;
     }
 }

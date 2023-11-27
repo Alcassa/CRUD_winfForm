@@ -65,6 +65,12 @@
     <Compile Include="telas\Cadastros.Designer.cs">
       <DependentUpon>Cadastros.cs</DependentUpon>
     </Compile>
+    <Compile Include="telas\frmVisualizaListaMusica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\frmVisualizaListaMusica.Designer.cs">
+      <DependentUpon>frmVisualizaListaMusica.cs</DependentUpon>
+    </Compile>
     <Compile Include="telas\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="relatorio\RelatorioMusica.rdlc" />
     <EmbeddedResource Include="telas\Cadastros.resx">
       <DependentUpon>Cadastros.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,5 +129,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
